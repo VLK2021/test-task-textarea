@@ -1,0 +1,14 @@
+.circleDelete {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    background: var(--var-bg-rectangle);
+    color: var(--var-color-titleName);
+    padding: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}

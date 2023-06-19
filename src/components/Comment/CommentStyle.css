@@ -1,0 +1,25 @@
+.comment {
+    width: 70%;
+    height: 5rem;
+    text-align: center;
+    background: var(--var-bg-comment);
+    color: var(--var-color-text);
+    margin: 0 0 3rem 0;
+}
+
+.rec-circ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-rectangle {
+    position: relative;
+    top: -1rem;
+}
+
+.bloc-circle-delete {
+    position: relative;
+    top: -1rem;
+    right: -0.5rem;
+}

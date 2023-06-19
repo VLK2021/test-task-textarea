@@ -1,0 +1,11 @@
+.circleInitial {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background: var(--var-bg-rectangle);
+    color: var(--var-color-titleInitials);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

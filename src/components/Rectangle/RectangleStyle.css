@@ -1,0 +1,12 @@
+.rectangle{
+    width: 10rem;
+    padding: 0.6rem;
+    background: var( --var-bg-rectangle);
+    color: var(--var-color-titleName);
+}
+
+.big-circle {
+    position: absolute;
+    top: -1rem;
+    left: -2rem;
+}

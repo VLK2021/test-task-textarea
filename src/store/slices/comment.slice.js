@@ -47,6 +47,9 @@ const commentSlice = createSlice({
         },
         addComments: (state, action) => {
             action.payload.comments.map(obj => state.commentsArr.push(obj));
+        },
+        createComment: (state, action) => {
+            state.commentsArr.push(action.payload)
         }
     },
 
@@ -71,7 +74,7 @@ const commentSlice = createSlice({
     }
 });
 
-const {actions: {deleteComment, addComments}} = commentSlice;
-const commentActions = {deleteComment, addComments};
+const {actions: {deleteComment, addComments, createComment}} = commentSlice;
+const commentActions = {deleteComment, addComments, createComment};
 export {commentActions};
 export default commentSlice.reducer;

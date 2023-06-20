@@ -1,8 +1,8 @@
-.form{
+.form {
 
 }
 
-.btn-send{
+.btn-send {
     width: 7rem;
     background: var(--var-bg-button);
     color: var(--var-color-titleInitials);
@@ -13,7 +13,7 @@
     padding: 0.7rem;
 }
 
-.btn-block-send{
+.btn-block-send {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -26,6 +26,13 @@ textarea {
     padding: 0.5rem;
 }
 
-.textarea-container, .custom-textarea{
+.textarea-container, .custom-textarea {
     width: 100%;
+}
+
+.custom-textarea {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    color: darkblue;
 }

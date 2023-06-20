@@ -11,10 +11,8 @@ import FormTextarea from "../FormTextarea/FormTextarea";
 const Comments = () => {
     const {commentsArr, skip} = useSelector(store => store.comments);
     const dispatch = useDispatch();
-    console.log(commentsArr);
 
     let skp = skip;
-
 
     useEffect(() => {
         dispatch(getAllComments(skp))

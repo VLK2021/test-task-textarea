@@ -21,7 +21,6 @@ const Comment = ({obj}) => {
             </div>
 
             <span className={'body-text'}>{id}) {body}</span>
-
         </div>
     );
 };

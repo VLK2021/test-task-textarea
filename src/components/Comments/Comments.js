@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 
 
 import './CommentsStyle.css';
-import {getAllComments} from "../../store";
+import {getAllComments, getCommentsMore} from "../../store";
 import Comment from "../Comment/Comment";
 
 
@@ -20,12 +20,22 @@ const Comments = () => {
     }, [dispatch, skp]);
 
 
+    const addMoreHandler = useCallback(() => {
+        skp = skp + 10;
+        dispatch(getCommentsMore(skp));
+    }, [skp]);
+
+
     return (
         <div className={'comments width'}>
             {
                 commentsArr &&
                 commentsArr.map(obj => <Comment key={obj.id} obj={obj}/>)
             }
+
+            <div className={'btn'}>
+                <button onClick={addMoreHandler}>ADD MORE</button>
+            </div>
         </div>
     );
 };

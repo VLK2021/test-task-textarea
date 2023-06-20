@@ -19,8 +19,9 @@ const Comment = ({obj}) => {
                     <CircleDelete id={id}/>
                 </div>
             </div>
-            {body}
-            {id}
+
+            <span className={'body-text'}>{id}) {body}</span>
+
         </div>
     );
 };

@@ -15,6 +15,19 @@ export const getAllComments = createAsyncThunk(
     }
 );
 
+export const getCommentsMore = createAsyncThunk(
+    'commentSlice/getCommentsMore',
+    async (skip, {rejectWithValue, dispatch}) => {
+        try {
+            const response = await commentService.getComments(skip);
+            const {comments} = response;
+            dispatch(addComments({comments}));
+        } catch (e) {
+            return rejectWithValue(e.message);
+        }
+    }
+);
+
 const initialState = {
     commentsArr: [],
     skip: 0,
@@ -31,6 +44,9 @@ const commentSlice = createSlice({
     reducers: {
         deleteComment: (state, action) => {
             state.commentsArr = state.commentsArr.filter(item => item.id !== action.payload)
+        },
+        addComments: (state, action) => {
+            action.payload.comments.map(obj => state.commentsArr.push(obj));
         }
     },
 
@@ -55,7 +71,7 @@ const commentSlice = createSlice({
     }
 });
 
-const {actions: {deleteComment}} = commentSlice;
-const commentActions = {deleteComment};
+const {actions: {deleteComment, addComments}} = commentSlice;
+const commentActions = {deleteComment, addComments};
 export {commentActions};
 export default commentSlice.reducer;

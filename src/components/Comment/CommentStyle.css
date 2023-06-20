@@ -5,6 +5,11 @@
     background: var(--var-bg-comment);
     color: var(--var-color-text);
     margin: 0 0 3rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--var-bg-button);
+}
+
+.body-text {
+    font-size: 1.2rem;
 }
 
 .rec-circ {

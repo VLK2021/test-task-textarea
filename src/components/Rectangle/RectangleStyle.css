@@ -3,6 +3,8 @@
     padding: 0.6rem;
     background: var( --var-bg-rectangle);
     color: var(--var-color-titleName);
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .big-circle {

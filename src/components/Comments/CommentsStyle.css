@@ -3,5 +3,25 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
 
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+.btn > button {
+    width: 60%;
+    background: var(--var-bg-button);
+    font-weight: bold;
+    border-radius: 0.8rem;
+    color: var(--var-color-titleInitials);
+    margin-bottom: 1rem;
+    transition: 2s;
+}
+
+.btn > button:hover {
+    transform: scale(1.05, 1.05);
+    background: var(--var-bg-comment);
+    color: var(--var-bg-button);
 }

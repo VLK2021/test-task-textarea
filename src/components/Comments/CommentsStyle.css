@@ -12,6 +12,7 @@
 
 .btn > button {
     width: 60%;
+    padding: 0.3rem;
     background: var(--var-bg-button);
     font-weight: bold;
     border-radius: 0.8rem;
@@ -24,4 +25,9 @@
     transform: scale(1.05, 1.05);
     background: var(--var-bg-comment);
     color: var(--var-bg-button);
+}
+
+.textarea-block{
+    width: 70%;
+margin: 5rem 0 5rem 0;
 }

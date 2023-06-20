@@ -1,0 +1,31 @@
+.form{
+
+}
+
+.btn-send{
+    width: 7rem;
+    background: var(--var-bg-button);
+    color: var(--var-color-titleInitials);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+}
+
+.btn-block-send{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: -2rem;
+    right: -2rem;
+}
+
+textarea {
+    padding: 0.5rem;
+}
+
+.textarea-container, .custom-textarea{
+    width: 100%;
+}

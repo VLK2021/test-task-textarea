@@ -5,6 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import './CommentsStyle.css';
 import {getAllComments, getCommentsMore} from "../../store";
 import Comment from "../Comment/Comment";
+import FormTextarea from "../FormTextarea/FormTextarea";
 
 
 const Comments = () => {
@@ -35,6 +36,10 @@ const Comments = () => {
 
             <div className={'btn'}>
                 <button onClick={addMoreHandler}>ADD MORE</button>
+            </div>
+
+            <div className={'textarea-block'}>
+                <FormTextarea/>
             </div>
         </div>
     );

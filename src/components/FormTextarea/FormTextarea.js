@@ -17,16 +17,20 @@ const FormTextarea = () => {
     }, [setValue]);
 
     const submit = (data) => {
+        if(data.text !== '') {
         localStorage.setItem('saveText', data.text);
-
-        const userObj = {
-            id: new Date().getTime(),
-            body: data.text,
-            user: {
-                username: 'Pics.Io'
+            const userObj = {
+                id: new Date().getTime(),
+                body: data.text,
+                user: {
+                    username: 'Pics.Io'
+                }
             }
+            dispatch(commentActions.createComment(userObj));
+        }else {
+            alert('Write text!!!')
         }
-        dispatch(commentActions.createComment(userObj));
+
     }
 
 
